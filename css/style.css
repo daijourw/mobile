@@ -1,6 +1,21 @@
 body {
     position: relative;
 }
+a.skip {
+    background-color: white;
+    padding: 5px;
+    -webkit-transition: top 1s ease-out;
+    transition: left 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -500px;
+    left: -500x;
+}
+.skip:focus {
+    top:20px;
+    left: 10px;
+    text-align: left;
+}
 main {
     min-height: 800px;
 }
@@ -250,5 +265,9 @@ form {
       -webkit-transition: initial; /* sets to default setting */
       /* transition: initial; sets to default setting */
       animation: initial;
+    }
+    a.skip {
+        -webkit-transition: initial;
+        transition: initial;
     }
   }
