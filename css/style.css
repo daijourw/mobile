@@ -1,0 +1,238 @@
+body {
+    position: relative;
+    min-height: 100vh;
+}
+h1 {
+    grid-column: 3 / 4;
+    text-align: center;
+    color: #000;
+    font-size: 2.5em;
+}
+#pageheader {
+    background-image: url("../images/home.jpeg");
+    padding: 100px;
+    margin: 5px;
+    width: 25vw;
+    grid-column: 2 / 5;
+    border: 5px solid #2C66C6;
+    justify-self: center;
+    text-align: center;
+}
+#industryheader {
+    background-image: url("../images/blackwhiterecordplayer.jpeg");
+    background-size: 450px;
+    padding: 100px;
+    margin: 5px;
+    width: 25vw;
+    grid-column: 2 / 5;
+    border: 5px solid #2C66C6;
+    justify-self: center;
+    text-align: center;
+}
+.bodyContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    row-gap: 15px;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.3em;
+    text-decoration: underline;
+    grid-column: 2 / 4;
+}
+p {
+    /* display: block; */
+    /* margin: 0px 200px 0px 200px; */
+    line-height: 1.2em;
+    /* width: 70%; */
+    text-align: justify;
+    text-indent: 35px;
+    grid-column: 2 / 5;
+
+}
+/* Nav Bar*/
+/* when screen big change direction to row in navbar */
+.navbar {
+    background-color: darkblue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+.navbar ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.navbar h1{
+    font-size: 90px;
+    font-family: 'Pacifico', cursive;
+}
+.navlist {
+    list-style-type: none;
+
+}
+.navlist li {
+    /* display: inline-block; */
+    display: block;
+    padding: 20px 10px;
+    border-top: 1px solid white;
+    width: 100%;
+    text-align: center;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+.navbar a:hover {
+    color: red;
+}
+.primary-icon {
+    height: 30px;
+}
+
+/* nav {
+    display:block;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    background-color: #2C66C6;
+    text-align: center;
+    border: 3px solid black;
+    padding: 0;
+    margin: 0;
+
+}
+nav li {
+    display: inline-block;
+    width: 20%;
+    margin:auto;
+    border: solid black;
+    border-width: 0px 3px 0px 3px;
+    padding: 0px;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 100%;
+    text-align: center;
+    color: white;
+    background-color: #2C66C6;
+
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    height: 15px;
+}
+.current {
+    color: #2C66C6;
+    background-color: white;
+}
+nav a:hover {
+    background-color: grey;
+} */
+
+
+/* Skip To Content Link */
+.skiplink {
+    display: block;
+    color: black;
+    text-align: center;
+}
+
+.skiplink:hover {
+    color: green;
+}
+
+/* Images Gallery */
+.galleryContainer {
+    background-color: grey;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    padding: 10px;
+}
+.gallery {
+    grid-column: 2 / 3;
+    display: inline-block;
+    height: 300px;
+    margin: 0px;
+    border: 5px solid #2C66C6;
+    padding: 5px;
+    background-color: white;
+    
+}
+/* nth child images put into one column, then put others into another column or could make ids */
+img.gallery:hover {
+    background-color: #2C66C6;
+    border: 4px solid white;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    background-image: url("../images/footerbackground.jpeg");
+    color: white;
+    position: absolute;
+    bottom: 0;
+}
+footer ul {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+footer a:hover {
+    color: lightblue;
+}
+
+#industryimg {
+    text-align: center;
+    width: 200px;
+    height: 200px;
+}
+/* #micimg {
+    width: 75%;
+    grid-column: 2 / 5;
+    justify-self: center;
+
+} */
+#contact h2, legend {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+form {
+    text-align: center;
+}
+/* larger than mobile */
+@media only screen and (min-width: 900px) {
+    .navbar {
+        flex-direction: row;
+    }
+    .skiplink:before{
+        content: "\1F3B6"
+    }
+    .skiplink:after{
+        content: "\1F3B6"
+    }
+}
+.fa-regularfa-envelope {
+    color: white;
+}
+#logo {
+    width: 450px;
+    animation-name: logoAnimation;
+    animation-duration: 5s;
+}
+@keyframes logoAnimation {
+    from {width: 25px; opacity:0;}
+    to {width: 450px; opacity:1;}
+}
