@@ -1,6 +1,8 @@
 body {
     position: relative;
-    min-height: 100vh;
+}
+main {
+    min-height: 800px;
 }
 h1 {
     grid-column: 3 / 4;
@@ -10,6 +12,7 @@ h1 {
 }
 #pageheader {
     background-image: url("../images/home.jpeg");
+    background-color: white;
     padding: 100px;
     margin: 5px;
     width: 25vw;
@@ -17,6 +20,7 @@ h1 {
     border: 5px solid #2C66C6;
     justify-self: center;
     text-align: center;
+    color: black;
 }
 #industryheader {
     background-image: url("../images/blackwhiterecordplayer.jpeg");
@@ -178,10 +182,9 @@ img.gallery:hover {
 /* footer */
 footer {
     width: 100%;
-    background-image: url("../images/footerbackground.jpeg");
+    /* background-image: url("../images/footerbackground.jpeg"); */
+    background-color: #000;
     color: white;
-    position: absolute;
-    bottom: 0;
 }
 footer ul {
     padding-top: 20px;
@@ -191,6 +194,10 @@ footer ul {
 }
 footer a:hover {
     color: lightblue;
+}
+footer a:visited{
+    color: aqua;
+
 }
 
 #industryimg {
@@ -236,3 +243,12 @@ form {
     from {width: 25px; opacity:0;}
     to {width: 450px; opacity:1;}
 }
+
+@media screen and (prefers-reduced-motion: reduce){
+    /*Turn off transition*/
+    #logo {
+      -webkit-transition: initial; /* sets to default setting */
+      /* transition: initial; sets to default setting */
+      animation: initial;
+    }
+  }
