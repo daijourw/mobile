@@ -186,6 +186,7 @@ nav a:hover {
     border: 5px solid #2C66C6;
     padding: 5px;
     background-color: white;
+    width: 70vw;
     
 }
 /* nth child images put into one column, then put others into another column or could make ids */
