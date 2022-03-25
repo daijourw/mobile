@@ -16,6 +16,9 @@ a.skip {
     left: 10px;
     text-align: left;
 }
+nav h1 {
+    color: white;
+}
 main {
     min-height: 800px;
 }
@@ -158,17 +161,6 @@ nav a:hover {
     background-color: grey;
 } */
 
-
-/* Skip To Content Link */
-.skiplink {
-    display: block;
-    color: black;
-    text-align: center;
-}
-
-.skiplink:hover {
-    color: green;
-}
 
 /* Images Gallery */
 .galleryContainer {
